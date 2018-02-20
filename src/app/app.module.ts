@@ -5,20 +5,24 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { TooltipDirective } from './tooltip.directive';
-import { TooltipWrapperComponent } from './tooltip-wrapper/tooltip-wrapper.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
+
 import { TooltipService } from './tooltip.service';
+import { DynamicComponent } from './dynamic/dynamic.component';
+import { TooltipContainerComponent } from './tooltip-container/tooltip-container.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TooltipDirective,
-    TooltipWrapperComponent,
-    TooltipComponent
+    DynamicComponent,
+    TooltipContainerComponent
   ],
   imports: [
     BrowserModule
+  ],
+  entryComponents: [
+    DynamicComponent
   ],
   providers: [TooltipService],
   bootstrap: [AppComponent]

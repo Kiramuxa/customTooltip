@@ -1,21 +1,7 @@
-<div class="buttons">
 
-  <button tooltip [tooltipMsg]="'Подсказка1'" [tooltipPlacement]="'left'" type="button" class="btn btn-primary">
-    Tooltip left
-  </button>
+<button class="btn btn-primary" type="button" [tooltip]="'Tooltip 1'" placement="left">tooltip 1</button>
+<button class="btn btn-primary" type="button" [tooltip]="'Tooltip 2'" placement="top">tooltip 2</button>
+<button class="btn btn-primary" type="button" [tooltip]="'Tooltip 3'" placement="bottom">tooltip 3</button>
+<button class="btn btn-primary" type="button" [tooltip]="'Tooltip 4'" placement="right">tooltip 4</button>
 
-  <button tooltip [tooltipMsg]="'Подсказка2'" [tooltipPlacement]="'top'" type="button" class="btn btn-primary">
-    Tooltip top
-  </button>
-
-  <button tooltip [tooltipMsg]="'Подсказка4'" [tooltipPlacement]="'bottom'" type="button" class="btn btn-primary">
-    Tooltip bottom
-  </button>
-
-  <button tooltip [tooltipMsg]="'Подсказка3'" [tooltipPlacement]="'right'" type="button" class="btn btn-primary">
-    Tooltip right
-  </button>
-
-</div>
-
-<app-tooltip-wrapper></app-tooltip-wrapper>
+<app-tooltip-container></app-tooltip-container>

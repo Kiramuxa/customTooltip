@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ComponentFactoryResolver, AfterViewInit, ViewContainerRef, ViewChild, OnInit } from '@angular/core';
+import { DynamicComponent } from './dynamic/dynamic.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor() { }
 
 }
